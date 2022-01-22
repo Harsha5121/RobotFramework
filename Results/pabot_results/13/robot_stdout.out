@@ -1,0 +1,26 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tc1                                                                    
+==============================================================================
+logintest                                                             | PASS |
+------------------------------------------------------------------------------
+radiobuttonstest                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc1.robot:22
+    T:  radiobuttonstest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc1.robot:24
+      Click Element    
+______________________________________________________________________________
+| FAIL |
+Keyword 'SeleniumLibrary.Click Element' expected 1 to 3 arguments, got 0.
+------------------------------------------------------------------------------
+Suites.Tc1                                                            | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Harsha\PycharmProjects\pythonProject3\Results\pabot_results\13\output.xml

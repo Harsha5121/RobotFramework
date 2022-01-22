@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tc2                                                                    
+==============================================================================
+inputtest1                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc2.robot:11
+    T:  inputtest1    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc2.robot:20
+      Select Checkbox    profession    Automation Tester
+______________________________________________________________________________
+| FAIL |
+Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.
+------------------------------------------------------------------------------
+Suites.Tc2                                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Harsha\PycharmProjects\pythonProject3\Results\pabot_results\14\output.xml

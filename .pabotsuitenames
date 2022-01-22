@@ -1,0 +1,20 @@
+datasources:cf82bf9839929321d8b428be7e8c5de724e83cd7
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:3996216bf741085cdd43f8e8e6c801cf5f03a2fd
+--suite Suites.Tc Browser
+--suite Suites.Tc Datadriven
+--suite Suites.Tc Forloop
+--suite Suites.Tc Frames
+--suite Suites.Tc Htmltable
+--suite Suites.Tc Keywords
+--suite Suites.Tc Links
+--suite Suites.Tc Mouse
+--suite Suites.Tc Navigation
+--suite Suites.Tc Scroll
+--suite Suites.Tc Setup Teardown
+--suite Suites.Tc Wb
+--suite Suites.Tc Xcel
+--suite Suites.Tc1
+--suite Suites.Tc2
+--suite Suites.Tc3

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220112 12:09:49.876" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Tc2" source="C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc2.robot">
+<test id="s1-s1-t1" name="inputtest1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220112 12:09:50.078" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<status status="PASS" starttime="20220112 12:09:50.078" endtime="20220112 12:10:03.279"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 12:10:08.295" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220112 12:10:03.279" endtime="20220112 12:10:08.295"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:firstname</arg>
+<arg>sriharsha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220112 12:10:08.296" level="INFO">Typing text 'sriharsha' into text field 'name:firstname'.</msg>
+<status status="PASS" starttime="20220112 12:10:08.295" endtime="20220112 12:10:08.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:lastname</arg>
+<arg>saikamesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220112 12:10:08.389" level="INFO">Typing text 'saikamesh' into text field 'name:lastname'.</msg>
+<status status="PASS" starttime="20220112 12:10:08.388" endtime="20220112 12:10:08.467"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 12:10:09.473" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220112 12:10:08.467" endtime="20220112 12:10:09.473"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220112 12:10:09.474" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20220112 12:10:09.474" endtime="20220112 12:10:09.526"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220112 12:10:09.527" level="INFO">Selecting '1' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20220112 12:10:09.526" endtime="20220112 12:10:09.567"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>profession</arg>
+<arg>Automation Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220112 12:10:09.568" level="FAIL">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</msg>
+<status status="FAIL" starttime="20220112 12:10:09.567" endtime="20220112 12:10:09.568"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>tool</arg>
+<arg>Selenium Webdriver</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220112 12:10:09.568" endtime="20220112 12:10:09.568"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20220112 12:10:09.568" endtime="20220112 12:10:09.568"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220112 12:10:09.568" endtime="20220112 12:10:09.569"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220112 12:10:09.569" endtime="20220112 12:10:09.569"/>
+</kw>
+<status status="FAIL" starttime="20220112 12:09:50.077" endtime="20220112 12:10:09.569">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</status>
+</test>
+<status status="FAIL" starttime="20220112 12:09:49.891" endtime="20220112 12:10:09.570"/>
+</suite>
+<status status="FAIL" starttime="20220112 12:09:49.876" endtime="20220112 12:10:09.571"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tc2">Suites.Tc2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

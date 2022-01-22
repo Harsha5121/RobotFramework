@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tc Frames                                                              
+==============================================================================
+testframes                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_frames.robot:11
+    T:  testframes    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_frames.robot:20
+      v    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'v' found.
+------------------------------------------------------------------------------
+Suites.Tc Frames                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Harsha\PycharmProjects\pythonProject3\pabot_results\3\output.xml

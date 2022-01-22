@@ -1,0 +1,26 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Tc Xcel                                                                
+==============================================================================
+LogintestwithExcel using                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_xcel.robot:10
+    T:  LogintestwithExcel using    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_xcel.robot:10
+      invalid login    ${username}    ${password}
+      |  ${username} = <Unable to define variable value>
+      |  ${password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+Suites.Tc Xcel                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Harsha\PycharmProjects\pythonProject3\pabot_results\12\output.xml
