@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220117 17:10:08.214" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220716 15:24:41.257" rpa="false" schemaversion="2">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Tc Mouse" source="C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_mouse.robot">
 <test id="s1-s1-t1" name="Mouserightclick">
@@ -7,115 +7,289 @@
 <arg>https://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:10:08.597" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
-<status status="PASS" starttime="20220117 17:10:08.597" endtime="20220117 17:10:14.395"/>
+<msg timestamp="20220716 15:24:41.476" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:24:44.762" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:24:44.762" endtime="20220716 15:24:44.762"/>
+</kw>
+<msg timestamp="20220716 15:24:44.762" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:24:41.476" endtime="20220716 15:24:44.762"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220117 17:10:14.395" endtime="20220117 17:10:14.527"/>
+<status status="NOT RUN" starttime="20220716 15:24:44.762" endtime="20220716 15:24:44.762"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:10:15.540" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:10:14.527" endtime="20220117 17:10:15.540"/>
+<status status="NOT RUN" starttime="20220716 15:24:44.762" endtime="20220716 15:24:44.762"/>
 </kw>
 <kw name="Open Context Menu" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220117 17:10:15.540" endtime="20220117 17:10:15.868"/>
+<status status="NOT RUN" starttime="20220716 15:24:44.762" endtime="20220716 15:24:44.762"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220117 17:10:15.868" endtime="20220117 17:10:18.117"/>
+<status status="NOT RUN" starttime="20220716 15:24:44.762" endtime="20220716 15:24:44.762"/>
 </kw>
-<status status="PASS" starttime="20220117 17:10:08.589" endtime="20220117 17:10:18.117"/>
+<status status="FAIL" starttime="20220716 15:24:41.476" endtime="20220716 15:24:44.762">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t2" name="double click element">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://testautomationpractice.blogspot.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:10:18.125" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20220117 17:10:18.125" endtime="20220117 17:10:25.079"/>
+<msg timestamp="20220716 15:24:44.775" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:24:47.950" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
+</kw>
+<msg timestamp="20220716 15:24:47.950" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:24:44.775" endtime="20220716 15:24:47.950"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220117 17:10:25.079" endtime="20220117 17:10:25.215"/>
+<status status="NOT RUN" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:10:26.231" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:10:25.215" endtime="20220117 17:10:26.231"/>
+<status status="NOT RUN" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
 </kw>
 <kw name="Double Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
 <doc>Double clicks the element identified by ``locator``.</doc>
-<msg timestamp="20220117 17:10:26.231" level="INFO">Double clicking element 'xpath://*[@id="HTML10"]/div[1]/button'.</msg>
-<status status="PASS" starttime="20220117 17:10:26.231" endtime="20220117 17:10:26.529"/>
+<status status="NOT RUN" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:10:27.532" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:10:26.529" endtime="20220117 17:10:27.532"/>
+<status status="NOT RUN" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220117 17:10:27.532" endtime="20220117 17:10:29.712"/>
+<status status="NOT RUN" starttime="20220716 15:24:47.950" endtime="20220716 15:24:47.950"/>
 </kw>
-<status status="PASS" starttime="20220117 17:10:18.117" endtime="20220117 17:10:29.712"/>
+<status status="FAIL" starttime="20220716 15:24:44.775" endtime="20220716 15:24:47.950">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t3" name="dragdrop">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://testautomationpractice.blogspot.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:10:29.715" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20220117 17:10:29.712" endtime="20220117 17:10:35.659"/>
+<msg timestamp="20220716 15:24:47.950" level="INFO">Opening browser 'chrome' to base url 'http://testautomationpractice.blogspot.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:24:51.075" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
+</kw>
+<msg timestamp="20220716 15:24:51.075" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:24:47.950" endtime="20220716 15:24:51.075"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220117 17:10:35.659" endtime="20220117 17:10:35.795"/>
+<status status="NOT RUN" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:10:36.806" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:10:35.795" endtime="20220117 17:10:36.806"/>
+<status status="NOT RUN" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
 </kw>
 <kw name="Drag And Drop" library="SeleniumLibrary">
 <arg>id:draggable</arg>
 <arg>id:droppable</arg>
 <doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" starttime="20220117 17:10:36.806" endtime="20220117 17:10:37.391"/>
+<status status="NOT RUN" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:10:38.392" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:10:37.391" endtime="20220117 17:10:38.392"/>
+<status status="NOT RUN" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220117 17:10:38.392" endtime="20220117 17:10:41.393"/>
+<status status="NOT RUN" starttime="20220716 15:24:51.075" endtime="20220716 15:24:51.075"/>
 </kw>
-<status status="PASS" starttime="20220117 17:10:29.712" endtime="20220117 17:10:41.393"/>
+<status status="FAIL" starttime="20220716 15:24:47.950" endtime="20220716 15:24:51.075">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
-<status status="PASS" starttime="20220117 17:10:08.262" endtime="20220117 17:10:41.393"/>
+<status status="FAIL" starttime="20220716 15:24:41.292" endtime="20220716 15:24:51.075"/>
 </suite>
-<status status="PASS" starttime="20220117 17:10:08.230" endtime="20220117 17:10:41.393"/>
+<status status="FAIL" starttime="20220716 15:24:41.273" endtime="20220716 15:24:51.075"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="Tc Mouse">Suites.Tc Mouse</stat>
+<stat pass="0" fail="3" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Tc Mouse">Suites.Tc Mouse</stat>
 </suite>
 </statistics>
 <errors>

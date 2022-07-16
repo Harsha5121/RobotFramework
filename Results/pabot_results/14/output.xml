@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220117 17:11:10.512" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220716 15:25:00.191" rpa="false" schemaversion="2">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Tc2" source="C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc2.robot">
 <test id="s1-s1-t1" name="inputtest1">
@@ -7,83 +7,136 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:11:10.880" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
-<status status="PASS" starttime="20220117 17:11:10.872" endtime="20220117 17:11:19.859"/>
+<msg timestamp="20220716 15:25:00.441" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:25:03.587" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
+</kw>
+<msg timestamp="20220716 15:25:03.587" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:25:00.441" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:11:24.860" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220117 17:11:19.859" endtime="20220117 17:11:24.860"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:firstname</arg>
 <arg>sriharsha</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:11:24.860" level="INFO">Typing text 'sriharsha' into text field 'name:firstname'.</msg>
-<status status="PASS" starttime="20220117 17:11:24.860" endtime="20220117 17:11:25.052"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:lastname</arg>
 <arg>saikamesh</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:11:25.052" level="INFO">Typing text 'saikamesh' into text field 'name:lastname'.</msg>
-<status status="PASS" starttime="20220117 17:11:25.052" endtime="20220117 17:11:25.137"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:11:26.142" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220117 17:11:25.137" endtime="20220117 17:11:26.142"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>sex</arg>
 <arg>Male</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20220117 17:11:26.142" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
-<status status="PASS" starttime="20220117 17:11:26.142" endtime="20220117 17:11:26.206"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>exp</arg>
 <arg>1</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20220117 17:11:26.206" level="INFO">Selecting '1' from radio button 'exp'.</msg>
-<status status="PASS" starttime="20220117 17:11:26.206" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>profession</arg>
 <arg>Automation Tester</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220117 17:11:26.270" level="FAIL">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</msg>
-<status status="FAIL" starttime="20220117 17:11:26.270" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>tool</arg>
 <arg>Selenium Webdriver</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220117 17:11:26.270" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <arg>continents</arg>
 <arg>2</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="NOT RUN" starttime="20220117 17:11:26.270" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220117 17:11:26.270" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220117 17:11:26.270" endtime="20220117 17:11:26.270"/>
+<status status="NOT RUN" starttime="20220716 15:25:03.587" endtime="20220716 15:25:03.587"/>
 </kw>
-<status status="FAIL" starttime="20220117 17:11:10.872" endtime="20220117 17:11:26.270">Keyword 'SeleniumLibrary.Select Checkbox' expected 1 argument, got 2.</status>
+<status status="FAIL" starttime="20220716 15:25:00.441" endtime="20220716 15:25:03.587">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
-<status status="FAIL" starttime="20220117 17:11:10.568" endtime="20220117 17:11:26.270"/>
+<status status="FAIL" starttime="20220716 15:25:00.222" endtime="20220716 15:25:03.602"/>
 </suite>
-<status status="FAIL" starttime="20220117 17:11:10.528" endtime="20220117 17:11:26.278"/>
+<status status="FAIL" starttime="20220716 15:25:00.207" endtime="20220716 15:25:03.602"/>
 </suite>
 <statistics>
 <total>

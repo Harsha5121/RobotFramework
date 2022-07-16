@@ -3,21 +3,67 @@ Suites
 ==============================================================================
 Suites.Tc Xcel                                                                
 ==============================================================================
-LogintestwithExcel using                                                
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_xcel.robot:10
-    T:  LogintestwithExcel using    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_xcel.robot:10
-      invalid login    ${username}    ${password}
-      |  ${username} = <Unable to define variable value>
-      |  ${password} = <Unable to define variable value>
-______________________________________________________________________________
-| FAIL |
-Variable '${username}' not found.
+LogintestwithExcel using                                              | FAIL |
+Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
 ------------------------------------------------------------------------------
 Suites.Tc Xcel                                                        | FAIL |
+Suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+
+
 1 test, 0 passed, 1 failed
 ==============================================================================
 Suites                                                                | FAIL |

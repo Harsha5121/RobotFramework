@@ -1,8 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+
 *** Variables ***
-${url}      https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+${url}      https://opensource-demo.orangehrmlive.com/
 ${browser}      chrome
 
 
@@ -10,6 +11,7 @@ ${browser}      chrome
 open my browser
     open browser    ${url}      ${browser}
     maximize browser window
+
 
 close my browser
     close all browsers
@@ -19,20 +21,20 @@ open login page
 
 Username
     [Arguments]   ${username}
-    input text    id:Email      ${username}
+    input text    id:txtUsername      ${username}
 
 Password
     [Arguments]    ${password}
-    input text    id:Password      ${password}
+    input text    id:txtPassword     ${password}
 
 click login
-    click button    xpath://button[contains(text(),'Log in')]
+    click button    xpath://input[@id='btnLogin']
 
 logout
     click link    Logout
 
 error msg should be visible
-    page should contain    Login was unsuccessful. Please correct the errors and try again.
+    page should contain    Invalid credentials
 
-dashboard
-    page should contain    Dashboard
+OrangeHRM
+    page should contain    OrangeHRM

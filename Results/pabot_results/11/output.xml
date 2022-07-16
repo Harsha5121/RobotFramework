@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220117 17:10:43.259" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220716 15:24:52.327" rpa="false" schemaversion="2">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Tc Wb" source="C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_wb.robot">
 <test id="s1-s1-t1" name="windowbrowser">
@@ -7,47 +7,104 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:10:43.571" level="INFO">Opening browser 'chrome' to base url 'http://demo.automationtesting.in/Windows.html'.</msg>
-<status status="PASS" starttime="20220117 17:10:43.571" endtime="20220117 17:10:53.211"/>
+<msg timestamp="20220716 15:24:52.546" level="INFO">Opening browser 'chrome' to base url 'http://demo.automationtesting.in/Windows.html'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:24:55.794" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:24:55.794" endtime="20220716 15:24:55.794"/>
+</kw>
+<msg timestamp="20220716 15:24:55.794" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:24:52.546" endtime="20220716 15:24:55.794"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20220117 17:10:53.249" level="INFO">${title} = Frames &amp; windows</msg>
-<status status="PASS" starttime="20220117 17:10:53.219" endtime="20220117 17:10:53.249"/>
+<status status="NOT RUN" starttime="20220716 15:24:55.794" endtime="20220716 15:24:55.794"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220117 17:10:53.249" endtime="20220117 17:10:53.249"/>
+<status status="NOT RUN" starttime="20220716 15:24:55.794" endtime="20220716 15:24:55.794"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220117 17:11:03.251" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220117 17:10:53.249" endtime="20220117 17:11:03.251"/>
+<status status="NOT RUN" starttime="20220716 15:24:55.794" endtime="20220716 15:24:55.794"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="Tabbed"]/a/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220117 17:11:03.251" level="INFO">Clicking element 'xpath://*[@id="Tabbed"]/a/button'.</msg>
-<status status="PASS" starttime="20220117 17:11:03.251" endtime="20220117 17:11:03.376"/>
+<status status="NOT RUN" starttime="20220716 15:24:55.794" endtime="20220716 15:24:55.794"/>
 </kw>
-<status status="PASS" starttime="20220117 17:10:43.571" endtime="20220117 17:11:03.376"/>
+<status status="FAIL" starttime="20220716 15:24:52.546" endtime="20220716 15:24:55.794">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
-<status status="PASS" starttime="20220117 17:10:43.290" endtime="20220117 17:11:03.384"/>
+<status status="FAIL" starttime="20220716 15:24:52.358" endtime="20220716 15:24:55.794"/>
 </suite>
-<status status="PASS" starttime="20220117 17:10:43.259" endtime="20220117 17:11:03.384"/>
+<status status="FAIL" starttime="20220716 15:24:52.342" endtime="20220716 15:24:55.794"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tc Wb">Suites.Tc Wb</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tc Wb">Suites.Tc Wb</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220117 17:09:27.038" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220716 15:24:28.890" rpa="false" schemaversion="2">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Tc Datadriven" source="C:\Users\Harsha\PycharmProjects\pythonProject3\Testcases\tc_datadriven.robot">
 <kw name="open my browser" library="login_resources" type="SETUP">
@@ -7,275 +7,251 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220117 17:09:27.428" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
-<status status="PASS" starttime="20220117 17:09:27.428" endtime="20220117 17:09:30.341"/>
+<msg timestamp="20220716 15:24:29.250" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220716 15:24:32.893" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220716 15:24:32.893" endtime="20220716 15:24:32.893"/>
+</kw>
+<msg timestamp="20220716 15:24:32.956" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220716 15:24:29.250" endtime="20220716 15:24:32.956"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220117 17:09:30.341" endtime="20220117 17:09:30.469"/>
+<status status="NOT RUN" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956"/>
 </kw>
-<status status="PASS" starttime="20220117 17:09:27.428" endtime="20220117 17:09:30.469"/>
+<status status="FAIL" starttime="20220716 15:24:29.250" endtime="20220716 15:24:32.956"/>
 </kw>
 <test id="s1-s1-t1" name="right user empty password">
-<kw name="invalid login">
-<arg>admin@yourstore.com</arg>
-<arg>${EMPTY}</arg>
-<kw name="Username" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:30.477" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220117 17:09:30.477" endtime="20220117 17:09:30.597"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:30.469" endtime="20220117 17:09:30.597"/>
-</kw>
-<kw name="Password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:30.597" level="INFO">Typing text '' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220117 17:09:30.597" endtime="20220117 17:09:30.689"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:30.597" endtime="20220117 17:09:30.689"/>
-</kw>
-<kw name="click login" library="login_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:30.689" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20220117 17:09:30.689" endtime="20220117 17:09:32.171"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:30.689" endtime="20220117 17:09:32.171"/>
-</kw>
-<kw name="error msg should be visible" library="login_resources">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220117 17:09:32.195" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
-<status status="PASS" starttime="20220117 17:09:32.179" endtime="20220117 17:09:32.195"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.171" endtime="20220117 17:09:32.195"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:30.469" endtime="20220117 17:09:32.195"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:30.469" endtime="20220117 17:09:32.195"/>
+<status status="FAIL" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t2" name="right user wrong password">
-<kw name="invalid login">
-<arg>admin@yourstore.com</arg>
-<arg>amin</arg>
-<kw name="Username" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:32.203" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220117 17:09:32.195" endtime="20220117 17:09:32.307"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.195" endtime="20220117 17:09:32.307"/>
-</kw>
-<kw name="Password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:32.307" level="INFO">Typing text 'amin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220117 17:09:32.307" endtime="20220117 17:09:32.402"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.307" endtime="20220117 17:09:32.402"/>
-</kw>
-<kw name="click login" library="login_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:32.402" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20220117 17:09:32.402" endtime="20220117 17:09:33.819"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.402" endtime="20220117 17:09:33.819"/>
-</kw>
-<kw name="error msg should be visible" library="login_resources">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220117 17:09:33.835" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
-<status status="PASS" starttime="20220117 17:09:33.827" endtime="20220117 17:09:33.835"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:33.819" endtime="20220117 17:09:33.835"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.195" endtime="20220117 17:09:33.835"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:32.195" endtime="20220117 17:09:33.835"/>
+<status status="FAIL" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t3" name="wrong user empty password">
-<kw name="invalid login">
-<arg>dmin@yourstore.com</arg>
-<arg>admin</arg>
-<kw name="Username" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:33.843" level="INFO">Typing text 'dmin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220117 17:09:33.843" endtime="20220117 17:09:33.963"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:33.843" endtime="20220117 17:09:33.963"/>
-</kw>
-<kw name="Password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:33.963" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220117 17:09:33.963" endtime="20220117 17:09:34.083"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:33.963" endtime="20220117 17:09:34.083"/>
-</kw>
-<kw name="click login" library="login_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:34.083" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20220117 17:09:34.083" endtime="20220117 17:09:35.470"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:34.083" endtime="20220117 17:09:35.470"/>
-</kw>
-<kw name="error msg should be visible" library="login_resources">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220117 17:09:35.485" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
-<status status="PASS" starttime="20220117 17:09:35.470" endtime="20220117 17:09:35.485"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.470" endtime="20220117 17:09:35.485"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:33.843" endtime="20220117 17:09:35.485"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:33.843" endtime="20220117 17:09:35.485"/>
+<status status="FAIL" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t4" name="wrong user wrong password">
-<kw name="invalid login">
-<arg>admin@yourstore.co</arg>
-<arg>admin</arg>
-<kw name="Username" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:35.485" level="INFO">Typing text 'admin@yourstore.co' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220117 17:09:35.485" endtime="20220117 17:09:35.575"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.485" endtime="20220117 17:09:35.575"/>
-</kw>
-<kw name="Password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:35.575" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220117 17:09:35.575" endtime="20220117 17:09:35.651"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.575" endtime="20220117 17:09:35.651"/>
-</kw>
-<kw name="click login" library="login_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:35.651" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20220117 17:09:35.651" endtime="20220117 17:09:36.089"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.651" endtime="20220117 17:09:36.089"/>
-</kw>
-<kw name="error msg should be visible" library="login_resources">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220117 17:09:36.108" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
-<status status="PASS" starttime="20220117 17:09:36.089" endtime="20220117 17:09:36.108"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.089" endtime="20220117 17:09:36.108"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.485" endtime="20220117 17:09:36.108"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:35.485" endtime="20220117 17:09:36.108"/>
+<status status="FAIL" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <test id="s1-s1-t5" name="wrong user right password">
-<kw name="invalid login">
-<arg>admin@yourstore.om</arg>
-<arg>admin</arg>
-<kw name="Username" library="login_resources">
-<arg>${username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:36.116" level="INFO">Typing text 'admin@yourstore.om' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20220117 17:09:36.116" endtime="20220117 17:09:36.202"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.108" endtime="20220117 17:09:36.210"/>
-</kw>
-<kw name="Password" library="login_resources">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:36.210" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220117 17:09:36.210" endtime="20220117 17:09:36.301"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.210" endtime="20220117 17:09:36.301"/>
-</kw>
-<kw name="click login" library="login_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Log in')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220117 17:09:36.301" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20220117 17:09:36.301" endtime="20220117 17:09:38.056"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.301" endtime="20220117 17:09:38.056"/>
-</kw>
-<kw name="error msg should be visible" library="login_resources">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220117 17:09:38.071" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
-<status status="PASS" starttime="20220117 17:09:38.056" endtime="20220117 17:09:38.071"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:38.056" endtime="20220117 17:09:38.071"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.108" endtime="20220117 17:09:38.071"/>
-</kw>
-<status status="PASS" starttime="20220117 17:09:36.108" endtime="20220117 17:09:38.071"/>
+<status status="FAIL" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </test>
 <kw name="close my browser" library="login_resources" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220117 17:09:38.080" endtime="20220117 17:09:40.254"/>
+<status status="PASS" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956"/>
 </kw>
-<status status="PASS" starttime="20220117 17:09:38.080" endtime="20220117 17:09:40.254"/>
+<status status="PASS" starttime="20220716 15:24:32.956" endtime="20220716 15:24:32.956"/>
 </kw>
-<status status="PASS" starttime="20220117 17:09:27.087" endtime="20220117 17:09:40.254"/>
+<status status="FAIL" starttime="20220716 15:24:28.906" endtime="20220716 15:24:32.956">Suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 103.0.5060.114 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E6903+2517251]
+	Ordinal0 [0x0027F8E1+2095329]
+	Ordinal0 [0x00182848+1058888]
+	Ordinal0 [0x001A0B9D+1182621]
+	Ordinal0 [0x0019CA60+1165920]
+	Ordinal0 [0x0019A2CF+1155791]
+	Ordinal0 [0x001CAAAF+1354415]
+	Ordinal0 [0x001CA71A+1353498]
+	Ordinal0 [0x001C639B+1336219]
+	Ordinal0 [0x001A27A7+1189799]
+	Ordinal0 [0x001A3609+1193481]
+	GetHandleVerifier [0x00475904+1577972]
+	GetHandleVerifier [0x00520B97+2279047]
+	GetHandleVerifier [0x00376D09+534521]
+	GetHandleVerifier [0x00375DB9+530601]
+	Ordinal0 [0x00284FF9+2117625]
+	Ordinal0 [0x002898A8+2136232]
+	Ordinal0 [0x002899E2+2136546]
+	Ordinal0 [0x00293541+2176321]
+	BaseThreadInitThunk [0x754E6739+25]
+	RtlGetFullPathName_UEx [0x775A8FEF+1215]
+	RtlGetFullPathName_UEx [0x775A8FBD+1165]
+	(No symbol) [0x00000000]
+</status>
 </suite>
-<status status="PASS" starttime="20220117 17:09:27.054" endtime="20220117 17:09:40.254"/>
+<status status="FAIL" starttime="20220716 15:24:28.890" endtime="20220716 15:24:32.956"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1" name="Tc Datadriven">Suites.Tc Datadriven</stat>
+<stat pass="0" fail="5" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s1" name="Tc Datadriven">Suites.Tc Datadriven</stat>
 </suite>
 </statistics>
 <errors>
